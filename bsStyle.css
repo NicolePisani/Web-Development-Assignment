@@ -1,0 +1,74 @@
+.background {
+    background-color: #0b090a;
+}
+
+@font-face {
+    font-family: "BodoniFLF-Bold";
+    src: url(BodoniFLF-Bold.ttf);
+}
+
+@font-face {
+    font-family: "HelveticaBold";
+    src: url(Helvetica_Neue_Condensed_Bold.ttf);
+}
+
+.h6{
+    font-family: "HelveticaBold";
+    color: white;
+}
+
+.h1{
+    font-family: "BodoniFLF-Bold";
+    color: #a4161a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image{
+    width: 70%;
+    float: right;
+}
+
+.menu{
+    margin-top: 150px;
+    margin-right:100px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.texthomepage{
+    color: white;
+    font-family: "HelveticaBold";
+    font-size: 70px;
+    margin-left: 120px;
+}
+
+.homepageicon{
+    color: white;
+    width: 15px;
+    height: 15px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.signuplogin{
+    color: white;
+    font-family: "HelveticaBold";
+}
+
+.nav-link:hover{
+    color:#a4161a
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #a4161a;
+}
