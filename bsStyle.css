@@ -1,5 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
 .background {
     background-color: #0b090a;
+    /* width: 100vw; */
 }
 
 @font-face {
@@ -17,6 +22,32 @@
     color: white;
 }
 
+.h2{
+    font-family: "HelveticaBold";
+    color: white;
+}
+
+h5{
+    font-family: "HelveticaBold";
+    color: #0b090a;
+}
+
+.jojimerch a:link{
+    color: #0b090a;
+    
+}
+
+.jojimerch a{
+    text-decoration:none;
+}
+
+
+.p{
+    font-family: "HelveticaBold";
+    color: white;
+    font-size: small;
+}
+
 .h1{
     font-family: "BodoniFLF-Bold";
     color: #a4161a;
@@ -27,7 +58,7 @@
 }
 
 .image{
-    width: 70%;
+    width: 69%;
     float: right;
 }
 
@@ -56,6 +87,14 @@
     flex-wrap: wrap;
 }
 
+.storepageicon{
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content:end;
+    flex-wrap: wrap;
+}
+
 .signuplogin{
     color: white;
     font-family: "HelveticaBold";
@@ -71,4 +110,260 @@
 
 .menu a:hover{
     color: #a4161a;
+}
+
+.storetohome {
+    padding: 0px;
+}
+
+.storetohome a:link{
+    text-decoration: none;
+}
+
+.storepage{
+    /* overflow-x: hidden; */
+    margin: 0px;
+}
+
+.storeprice{
+    float:right;
+}
+
+.contacttohome a:link{
+    text-decoration: none;
+}
+
+.errorText{
+    color:red
+}
+
+.inputError{
+    color:red;
+    border:1px red solid;
+}
+
+.btn-red{
+    color:#0b090a;
+    background-color: white;
+    border-color: white;
+    /* Using custom font */
+    font-family: 'HelveticaBold'
+}
+
+.btn-red:hover{
+    color: white;
+    background-color:#a4161a;
+    border-color:#a4161a;
+}
+
+.contactpage{
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+.photo-grid-container {
+    column-count: 5;
+    column-width: 300px;
+}
+.photo-grid-item {
+    margin: 0 auto 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background:#0b090a;
+}
+
+.left-column {
+    width: 70%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: 60px;
+}
+
+.productcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+.left-column img {
+    width: 90%;
+}
+
+.left-column img.active {
+    opacity: 1;
+  }
+
+
+.product-description {
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    font-family: "HelveticaBold";
+}
+
+.product-description h1 {
+    font-size: 52px;
+    color: white;
+    letter-spacing: -2px;
+}
+
+.product-description p {
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+}
+
+.size-choose {
+    margin-bottom: 20px;
+}
+
+.size-choose button {
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color:#0b090a;
+    background-color: white;
+    cursor: pointer;
+    transition: all .5s;
+    font-family: "HelveticaBold";
+}
+
+.size-choose button:hover,
+.size-choose button:active,
+.size-choose button:focus {
+    background-color:#a4161a;
+    color: white;
+    outline: none;
+}
+
+.size-config {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.product-configuration{
+color: white;
+font-family: "HelveticaBold";
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-price p {
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    margin-right: 20px;
+    font-family: "HelveticaBold";
+}
+
+.cart-btn {
+    display: inline-block;
+    background-color:white;
+    border-radius: 6px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+    font-family: "HelveticaBold";
+}
+.cart-btn:hover {
+    background-color:#a4161a;
+    color: white;
+}
+
+@media (max-width: 940px) {
+    .container {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+   
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+   
+    .left-column img {
+      width: 300px;
+      right: 0;
+      top: -65px;
+      left: initial;
+    }
+  }
+   
+  @media (max-width: 535px) {
+    .left-column img {
+      width: 220px;
+      top: -85px;
+    }
+  }
+
+.wrapper{
+    font-family: "HelveticaBold";
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aboutbody{
+    height:100%;
+}
+
+.imgabout{
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-image: url("Joji-900x598.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content p{
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#0b090a;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.wrapper:hover .overlay{
+    height:100%;
+
 }
