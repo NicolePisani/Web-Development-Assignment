@@ -96,6 +96,17 @@ var Password2 = document.getElementById('password2').value;
     else{
         document.getElementById('password2').classList.remove('inputError');
     }
+
+    if(errors!=""){
+        document.getElementById('errorlist').innerHTML = errors;
+        return false;
+    }
+    
+    else{
+        document.getElementById('errorlist').innerHTML = "";
+        return true;
+    
+    }
 }
 
 function resetForm2(){
@@ -105,4 +116,43 @@ function resetForm2(){
     document.getElementById('email2').classList.remove('inputError');
     document.getElementById('password2').classList.remove('inputError');
 }
+
+function validateForm3(){
+    var errors = "";
+
+    var Email3 = document.getElementById('email3').value;
+    if (Email3==""){
+        errors += "<li>Please enter Email.</li>";
+        document.getElementById('email3').classList.add('inputError');
+    }
+    else{
+        document.getElementById('email3').classList.remove('inputError');
+    }
+
+    var Password3 = document.getElementById('password3').value;
+    if (Password3==""){
+        errors += "<li>Please enter Phone.</li>";
+        document.getElementById('password3').classList.add('inputError');
+    }
+    else{
+        document.getElementById('password3').classList.remove('inputError');
+    }
+
+    if(errors!=""){
+        document.getElementById('errorlist').innerHTML = errors;
+        return false;
+    }
     
+    else{
+        document.getElementById('errorlist').innerHTML = "";
+        return true;
+    
+    }
+
+}
+
+function resetForm3(){
+    document.getElementById('errorlist').innerHTML = "";
+    document.getElementById('email3').classList.remove('inputError');
+    document.getElementById('password3').classList.remove('inputError');
+}
